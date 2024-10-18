@@ -9,15 +9,64 @@ const<!DOCTYPE html>
 
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body class="body">
   <script>
     document.write(header) // var is from main.js
   </script> 
   <main>
       <h1>Overnight</h1> 
+      <hr>
       <form id="overnightForm" >
-          <input type="date" id="when" name="when" required>
-          <input type="submit" value="Save">
+        Full Name:
+        <br>
+        <input type="name" name="fullName" id="form" >
+        <br><br>
+        Email:
+        <br>
+        <input type="email" id="form" >
+        <br><br>
+        Please select your check-in date:
+        <br>
+        <input type="date" id="when" name="when" >
+        <br><br>
+        Please select how many nights <br>
+        you will be spending with us:
+        <br>
+        <input type="number" name="nights" id="nights" minlength="1" maxlength="28">
+        <br><br>
+        Please select your room type:
+        <br>
+        <input type="radio" name="room" value="queen">Queen <br>
+        <input type="radio" name="room" value="king">King <br>
+        <input type="radio" name="room" value="suite">2-Bedroom Suite <br><br>
+        <label for="num">Please select the number of adults:</label>
+        <br>
+        <select name="adult" id="adults" >
+          <option value="none">Select</option>
+          <option value="1"> 1 Adult</option>
+          <option value="1"> 2 Adults</option>
+          <option value="1"> 3 Adults</option>
+          <option value="1"> 4 Adults</option>
+        </select> <br><br>
+        <label for="num">Please select the number of children:</label>
+        <br>
+        <select name="children" id="children">
+          <option value="none">Select</option>
+          <option value="1"> 0 Children</option>
+          <option value="1"> 1 Children</option>
+          <option value="1"> 2 Children</option>
+          <option value="1"> 3 Children</option>
+          <option value="1"> 4 Children</option>
+        </select>
+        <br><br>
+        Please select all discounts that apply: <br>
+        <input type="radio" name="discount" value="none">None <br>
+        <input type="radio" name="discount" value="senior">AAA/Senior (10%) <br>
+        <input type="radio" name="discount" value="military">Military (20%) <br>
+        <br>
+        <input type="submit" value="Save" id="save">
+        <br>
+        
         </form>
         <div id="output">?</div>
     </main>

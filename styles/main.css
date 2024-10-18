@@ -1,3 +1,13 @@
 body {
     background-color: rgb(250, 180, 180);
 }
+#when {
+    width: 176px;
+}
+#save {
+    color: pink;
+    background-color: rgb(95, 46, 79);
+}
+#adults {
+    width: 85px;
+}
